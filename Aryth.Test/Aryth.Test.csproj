@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <PackageVersion>0.0.0</PackageVersion>
+        <Title>Aryth.Test</Title>
+        <Description>Test for aryth</Description>
+        <Authors>Hoyeung Wong</Authors>
+        <Company>Hoyeung Wong</Company>
+        <Copyright>(c) Hoyeung Wong 2020-present</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <AssemblyVersion>0.0.0</AssemblyVersion>
+        <FileVersion>0.0.0</FileVersion>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="NUnit" Version="3.13.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="4.0.0-beta.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+        <PackageReference Include="Spare" Version="0.0.10" />
+        <PackageReference Include="Veho" Version="0.0.22" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Aryth.Bounds\Aryth.Bounds.csproj" />
+        <ProjectReference Include="..\Aryth.Comparer\Aryth.Comparer.csproj" />
+        <ProjectReference Include="..\Aryth.Math\Aryth.Math.csproj" />
+    </ItemGroup>
+</Project>
