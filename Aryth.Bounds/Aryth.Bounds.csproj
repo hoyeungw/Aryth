@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageVersion>0.0.1</PackageVersion>
-    <Title>Aryth.Comparer</Title>
-    <Description>Comparer collection for sort and rank</Description>
+    <Title>Aryth.Bound</Title>
+    <Description>Bound for 1d-array and 2d-array</Description>
     <Authors>Hoyeung Wong</Authors>
     <Company>Hoyeung Wong</Company>
     <Copyright>(c) Hoyeung Wong 2020-present</Copyright>
@@ -13,4 +13,10 @@
     <FileVersion>0.0.1</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aryth.Types\Aryth.Types.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Veho" Version="0.0.22"/>
+  </ItemGroup>
 </Project>
