@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aryth.Types", "Aryth.Types\Aryth.Types.csproj", "{6F4B847E-182D-4741-9AB3-AB5D73472370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aryth.Comparer", "Aryth.Comparer\Aryth.Comparer.csproj", "{48BAFC8E-D552-4D69-9746-506CDC7AEAF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aryth.Math", "Aryth.Math\Aryth.Math.csproj", "{8C7E77E8-4E6F-4B9F-8305-7CE28D7593D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aryth.Bound", "Aryth.Bound\Aryth.Bound.csproj", "{A9C9182D-D517-4C40-98ED-43EA11A9B36D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F4B847E-182D-4741-9AB3-AB5D73472370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F4B847E-182D-4741-9AB3-AB5D73472370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F4B847E-182D-4741-9AB3-AB5D73472370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F4B847E-182D-4741-9AB3-AB5D73472370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48BAFC8E-D552-4D69-9746-506CDC7AEAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48BAFC8E-D552-4D69-9746-506CDC7AEAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48BAFC8E-D552-4D69-9746-506CDC7AEAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48BAFC8E-D552-4D69-9746-506CDC7AEAF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7E77E8-4E6F-4B9F-8305-7CE28D7593D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7E77E8-4E6F-4B9F-8305-7CE28D7593D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7E77E8-4E6F-4B9F-8305-7CE28D7593D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7E77E8-4E6F-4B9F-8305-7CE28D7593D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C9182D-D517-4C40-98ED-43EA11A9B36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C9182D-D517-4C40-98ED-43EA11A9B36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C9182D-D517-4C40-98ED-43EA11A9B36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C9182D-D517-4C40-98ED-43EA11A9B36D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
