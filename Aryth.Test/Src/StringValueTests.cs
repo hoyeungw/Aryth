@@ -1,6 +1,6 @@
-﻿using Aryth.Bounds.Helpers;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Spare.Logger;
+using Texting.Value;
 using Veho.Vector;
 
 namespace Aryth.Test {
