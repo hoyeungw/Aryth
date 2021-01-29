@@ -2,21 +2,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageVersion>0.0.2</PackageVersion>
+    <PackageVersion>0.0.3</PackageVersion>
     <Title>Aryth.Bound</Title>
     <Description>Bound for 1d-array and 2d-array</Description>
     <Authors>Hoyeung Wong</Authors>
     <Company>Hoyeung Wong</Company>
     <Copyright>(c) Hoyeung Wong 2020-present</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <AssemblyVersion>0.0.2</AssemblyVersion>
-    <FileVersion>0.0.2</FileVersion>
+    <AssemblyVersion>0.0.3</AssemblyVersion>
+    <FileVersion>0.0.3</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Aryth.Types\Aryth.Types.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Veho" Version="0.0.22" />
+    <PackageReference Include="Spare.Logger" Version="0.0.11" />
+    <PackageReference Include="Texting" Version="0.0.6" />
+    <PackageReference Include="Veho" Version="0.0.24" />
   </ItemGroup>
 </Project>
