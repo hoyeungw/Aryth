@@ -20,11 +20,11 @@ namespace Aryth.Bounds {
       ? ((T min, T max)?) null
       : matrix.Fold(PileBound, InitBound);
 
-    public static (T min, T max)?[] BoundRows<T>(this T[,] matrix) where T : IComparable<T> => !matrix.Size().Any()
+    public static (T min, T max)?[] BoundRows<T>(this T[,] matrix) where T : IComparable<T> => !matrix.Any()
       ? Array.Empty<(T, T)?>()
       : matrix.MapRows(row => row.Bound());
 
-    public static (T min, T max)?[] BoundColumns<T>(this T[,] matrix) where T : IComparable<T> => !matrix.Size().Any()
+    public static (T min, T max)?[] BoundColumns<T>(this T[,] matrix) where T : IComparable<T> => !matrix.Any()
       ? Array.Empty<(T, T)?>()
       : matrix.MapColumns(col => col.Bound());
   }

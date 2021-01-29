@@ -47,7 +47,7 @@ namespace Aryth.Test {
       candidates.Iterate(vec => {
         var ((veX, bdX), (veY, bdY)) = vec.DuoBound();
         $"X: [vector] ({veX.Deco()}) [bound] ({bdX})".Logger();
-        $"Y: [vector] ({veY.Deco()}) [bound] ({bdY})".Logger();
+        $"Y: [vector] ({veY.Deco()}) [bound] ({bdY})".LogNext();
       });
     }
   }
