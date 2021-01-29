@@ -1,5 +1,4 @@
-﻿using System;
-using Aryth.Bounds.Helpers;
+﻿using Aryth.Bounds.Helpers;
 using NUnit.Framework;
 using Spare.Logger;
 
