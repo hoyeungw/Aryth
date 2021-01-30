@@ -1,9 +1,9 @@
 ﻿using Aryth.Bounds.Helpers;
 using Veho.Entries;
-using Veho.Vector;
 using Veho.Matrix;
 using Veho.Matrix.Columns;
 using Veho.Matrix.Rows;
+using Veho.Vector;
 
 // using Bound = System.Nullable<(double, double)>;
 // using VectorAndBound = System.ValueTuple<double[], (double, double)?>;

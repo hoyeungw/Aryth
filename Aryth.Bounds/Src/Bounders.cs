@@ -1,8 +1,8 @@
 ﻿using System;
-using Veho.Vector;
 using Veho.Matrix;
 using Veho.Matrix.Columns;
 using Veho.Matrix.Rows;
+using Veho.Vector;
 
 namespace Aryth.Bounds {
   public static class Bounders {
