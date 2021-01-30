@@ -18,7 +18,7 @@
         <PackageReference Include="NUnit" Version="3.13.0" />
         <PackageReference Include="NUnit3TestAdapter" Version="4.0.0-beta.1" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
-        <PackageReference Include="Spare" Version="0.0.14" />
+        <PackageReference Include="Spare" Version="0.0.15" />
         <PackageReference Include="Texting" Version="0.0.12" />
         <PackageReference Include="Veho" Version="0.1.1" />
     </ItemGroup>
