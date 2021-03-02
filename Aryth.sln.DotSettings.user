@@ -1,5 +1,11 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a8584a97_002Da2ae_002D4e9f_002D83cb_002D5736a7cbb1ed/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="VectorBoundTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2bcc5185_002D3a18_002D4615_002Db303_002D2c395f716f01/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="VectorDuoboundTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.DuoBoundTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.SoleBoundTest.VectorSoleBoundTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a8584a97_002Da2ae_002D4e9f_002D83cb_002D5736a7cbb1ed/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="VectorBoundTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Tests.VectorBoundTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Tests.MatrixBoundTest&lt;/TestId&gt;&#xD;
