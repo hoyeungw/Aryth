@@ -11,9 +11,9 @@ namespace Aryth.Test {
     [Test]
     public void VectorDuoboundTest() {
       var candidates = new List<string[]> {
-        new[] {"a", "b", "c", "1", "2", "3"},
-        new[] {"a", "b", "c"},
-        new[] {"1", "2", "3"}
+        new[] {"a", "b", "c", null, "1", "2", "3"},
+        new[] {"a", "b", "c", null,},
+        new[] {"1", "2", "3", null}
       };
       candidates.Iterate(vec => {
         var ((veX, bdX), (veY, bdY)) = vec.DuoBound();
