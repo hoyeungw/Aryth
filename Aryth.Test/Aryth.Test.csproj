@@ -20,7 +20,7 @@
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
         <PackageReference Include="Spare" Version="0.1.4" />
         <PackageReference Include="Texting" Version="0.0.18" />
-        <PackageReference Include="Veho" Version="0.2.3" />
+        <PackageReference Include="Veho" Version="0.2.4" />
     </ItemGroup>
 
     <ItemGroup>
