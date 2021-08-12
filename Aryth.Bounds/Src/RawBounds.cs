@@ -1,7 +1,8 @@
 ﻿using System;
-using Veho;
 using Veho.Columns;
+using Veho.Matrix;
 using Veho.Rows;
+using Veho.Vector;
 
 namespace Aryth.Bounds {
   public static class RawBounds {

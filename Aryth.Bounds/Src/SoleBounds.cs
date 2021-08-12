@@ -1,7 +1,8 @@
 ﻿using Aryth.Bounds.Helpers;
-using Veho;
+using Veho.Matrix;
 using Veho.Columns;
 using Veho.Rows;
+using Veho.Vector;
 
 namespace Aryth.Bounds {
   public static class SoleBounds {

@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using Spare.Logger;
 using Texting.Value;
-using Veho;
+using Veho.Vector;
 
 namespace Aryth.Test {
   [TestFixture]

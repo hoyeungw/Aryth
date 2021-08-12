@@ -3,7 +3,7 @@ using Aryth.Bounds;
 using NUnit.Framework;
 using Spare.Deco;
 using Spare.Logger;
-using Veho;
+using Veho.List;
 
 namespace Aryth.Test {
   [TestFixture]

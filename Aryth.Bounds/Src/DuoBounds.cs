@@ -2,6 +2,8 @@
 using Veho;
 using Veho.Columns;
 using Veho.Rows;
+using Veho.Vector;
+using Veho.Matrix;
 
 namespace Aryth.Bounds {
   public static class DuoBounds {
