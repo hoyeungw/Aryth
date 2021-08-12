@@ -2,7 +2,7 @@ using Aryth.Bounds;
 using NUnit.Framework;
 using Spare.Deco;
 using Spare.Logger;
-using Veho.Matrix;
+using Veho;
 
 namespace Aryth.Test {
   public class Tests {
@@ -29,7 +29,7 @@ namespace Aryth.Test {
       m0.BoundRows().ToString().Logger();
       m0.BoundColumns().ToString().Logger();
 
-      var m1 = Inits.Iso<int>(0, 0, default);
+      var m1 = Mat.Iso<int>(0, 0, default);
       m1.Deco().Logger();
       m1.Bound().ToString().Logger();
       m1.BoundRows().ToString().Logger();

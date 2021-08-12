@@ -1,9 +1,7 @@
 ﻿using Aryth.Bounds.Helpers;
-using Veho.Entries;
-using Veho.Matrix;
-using Veho.Matrix.Columns;
-using Veho.Matrix.Rows;
-using Veho.Vector;
+using Veho;
+using Veho.Columns;
+using Veho.Rows;
 
 namespace Aryth.Bounds {
   public static class DuoBounds {
@@ -11,8 +9,8 @@ namespace Aryth.Bounds {
       (double min, double max)? bdX = null;
       (double min, double max)? bdY = null;
       var (veX, veY) = vector
-        .Map(x => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, x))
-        .Unwind();
+                       .Map(x => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, x))
+                       .Unwind();
       return ((veX, bdX), (veY, bdY));
     }
 
@@ -20,8 +18,8 @@ namespace Aryth.Bounds {
       (double min, double max)? bdX = null;
       (double min, double max)? bdY = null;
       var (veX, veY) = matrix
-        .Map(x => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, x))
-        .Unwind();
+                       .Map(x => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, x))
+                       .Unwind();
       return ((veX, bdX), (veY, bdY));
     }
 
@@ -29,8 +27,8 @@ namespace Aryth.Bounds {
       (double min, double max)? bdX = null;
       (double min, double max)? bdY = null;
       var (veX, veY) = matrix
-        .Row(x, v => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, v), w)
-        .Unwind();
+                       .Row(x, v => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, v), w)
+                       .Unwind();
       return ((veX, bdX), (veY, bdY));
     }
 
@@ -38,8 +36,8 @@ namespace Aryth.Bounds {
       (double min, double max)? bdX = null;
       (double min, double max)? bdY = null;
       var (veX, veY) = matrix
-        .Column(y, v => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, v), h)
-        .Unwind();
+                       .Column(y, v => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, v), h)
+                       .Unwind();
       return ((veX, bdX), (veY, bdY));
     }
   }

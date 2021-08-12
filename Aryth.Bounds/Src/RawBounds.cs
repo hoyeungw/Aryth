@@ -1,15 +1,13 @@
 ﻿using System;
-using Veho.Matrix;
-using Veho.Matrix.Columns;
-using Veho.Matrix.Rows;
-using Veho.Vector;
+using Veho;
+using Veho.Columns;
+using Veho.Rows;
 
 namespace Aryth.Bounds {
   public static class RawBounds {
     private static (T min, T max) InitBound<T>(T value) => (value, value);
     private static (T min, T max) AssortBound<T>((T min, T max) bound, T value) where T : IComparable<T> {
-      if (value.CompareTo(bound.max) > 0) { bound.max = value; }
-      else if (value.CompareTo(bound.min) < 0) { bound.min = value; }
+      if (value.CompareTo(bound.max) > 0) { bound.max = value; } else if (value.CompareTo(bound.min) < 0) { bound.min = value; }
       return bound;
     }
     public static (T min, T max)? Bound<T>(this T[] vec) where T : IComparable<T> => vec.Length == 0
