@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using Spare.Logger;
+using Spare;
 using Texting.Value;
 using Veho.Vector;
 

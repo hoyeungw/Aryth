@@ -1,6 +1,6 @@
 ﻿using Aryth.Bounds.Helpers;
 using NUnit.Framework;
-using Spare.Logger;
+using Spare;
 
 namespace Aryth.Test {
   [TestFixture]
