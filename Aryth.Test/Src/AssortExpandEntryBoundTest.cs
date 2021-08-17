@@ -1,4 +1,4 @@
-﻿using Aryth.Bounds.Helpers;
+﻿using Aryth.Bounds.Utils;
 using NUnit.Framework;
 using Spare;
 

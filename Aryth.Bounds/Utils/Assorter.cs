@@ -2,7 +2,7 @@
 using Typen.Numeral;
 using static System.Double;
 
-namespace Aryth.Bounds.Helpers {
+namespace Aryth.Bounds.Utils {
   public static class Assorter {
     public static (double x, double y) Assort<T>(T x) {
       if (x == null) return (NaN, NaN);
@@ -36,8 +36,7 @@ namespace Aryth.Bounds.Helpers {
         var pair = bound.Value;
         if (n > pair.max) {
           pair.max = n;
-        }
-        else if (n < pair.min) {
+        } else if (n < pair.min) {
           pair.min = n;
         }
         bound = pair;

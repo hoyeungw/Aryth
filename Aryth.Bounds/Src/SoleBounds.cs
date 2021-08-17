@@ -1,4 +1,4 @@
-﻿using Aryth.Bounds.Helpers;
+﻿using Aryth.Bounds.Utils;
 using Veho.Matrix;
 using Veho.Columns;
 using Veho.Rows;
