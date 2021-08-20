@@ -1,5 +1,5 @@
 ﻿using Texting.Value;
-using Typen.Numeral;
+using Typen;
 using static System.Double;
 
 namespace Aryth.Bounds.Utils {
