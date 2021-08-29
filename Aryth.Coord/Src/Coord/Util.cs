@@ -1,7 +1,7 @@
 ﻿using static System.Math;
 
 namespace Aryth.Coord {
-  public static class Util {
+  public static class CoordUtil {
     public static double Radius(this (double x, double y) coord) {
       var (x, y) = coord;
       return Sqrt(x * x + y * y);
