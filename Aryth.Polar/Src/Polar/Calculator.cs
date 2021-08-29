@@ -36,10 +36,5 @@ namespace Aryth.Polar {
       }
       return target;
     }
-    public static List<(double r, double θ)> Adjacent(this List<(double r, double θ)> list, (double r, double θ) rimMark) {
-      var (r, θ) = rimMark;
-      var target = list.FindAll(polar => polar.r < r * Cos(2 * (polar.θ - θ) * PI / 180));
-      return target;
-    }
   }
 }
