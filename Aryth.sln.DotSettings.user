@@ -10,6 +10,11 @@
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.PolarTests.TestAlpha&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a7a91ca8_002D9cb9_002D4955_002Da593_002Df62356852a96/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="QuadrifoliumTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.FoliumTests.QuadrifoliumTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a8584a97_002Da2ae_002D4e9f_002D83cb_002D5736a7cbb1ed/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="VectorBoundTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Tests.VectorBoundTest&lt;/TestId&gt;&#xD;
@@ -27,5 +32,27 @@
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.PolarTests.TestBeta&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Flopper.FlopperTests.TestAlpha&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Flopper.FlopperTests.TestBeta&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.FoliumTests.TrifoliumTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.FoliumTests.QuadrifoliumTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba47dffb_002D78a1_002D4995_002Dafb8_002Df2c298f891a7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="VectorBoundTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Tests.VectorBoundTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Tests.MatrixBoundTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.StringValueTests.StringValueTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.AssortExpandEntryBoundTest.Test&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.DuoboundTest.Test&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.DuoBoundTest.Test&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.DuoBoundTest.VectorDuoboundTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.DuoBoundTest.MatrixDuoboundTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.StringValueTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.SoleBoundTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.DuoBoundTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.PolarTests.TestAlpha&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.PolarTests.TestBeta&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Flopper.FlopperTests.TestAlpha&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Flopper.FlopperTests.TestBeta&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.FoliumTests.TrifoliumTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
