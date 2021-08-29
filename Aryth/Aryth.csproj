@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageVersion>0.1.1</PackageVersion>
-    <Title>Aryth.Polar</Title>
-    <Description>Math extensions for polar coordinate system</Description>
+    <Title>Aryth</Title>
+    <Description>Math lib</Description>
     <Authors>Hoyeung Wong</Authors>
     <Company>Hoyeung Wong</Company>
     <Copyright>(c) Hoyeung Wong 2020-present</Copyright>
@@ -11,11 +12,13 @@
     <AssemblyVersion>0.1.1</AssemblyVersion>
     <FileVersion>0.1.1</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <RootNamespace>Aryth</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Aryth.Bounds\Aryth.Bounds.csproj" />
+    <ProjectReference Include="..\Aryth.Comparer\Aryth.Comparer.csproj" />
     <ProjectReference Include="..\Aryth.Coord\Aryth.Coord.csproj" />
     <ProjectReference Include="..\Aryth.Math\Aryth.Math.csproj" />
+    <ProjectReference Include="..\Aryth.Polar\Aryth.Polar.csproj" />
+    <ProjectReference Include="..\Aryth.Types\Aryth.Types.csproj" />
   </ItemGroup>
-
 </Project>

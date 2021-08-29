@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageVersion>0.1.1</PackageVersion>
     <Title>Aryth.Coord</Title>
-    <Description>Math extensions</Description>
+    <Description>Math extensions for cartesian coordinate system</Description>
     <Authors>Hoyeung Wong</Authors>
     <Company>Hoyeung Wong</Company>
     <Copyright>(c) Hoyeung Wong 2020-present</Copyright>
