@@ -1,9 +1,9 @@
 ﻿using Aryth.Bounds.Utils;
 using Veho;
 using Veho.Columns;
+using Veho.Matrix;
 using Veho.Rows;
 using Veho.Vector;
-using Veho.Matrix;
 
 namespace Aryth.Bounds {
   public static class DuoBounds {

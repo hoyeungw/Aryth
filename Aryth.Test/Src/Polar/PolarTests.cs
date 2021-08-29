@@ -1,8 +1,8 @@
 ﻿using System;
-using NUnit.Framework;
 using System.Collections.Generic;
 using Aryth.Coord;
 using Aryth.Polar.Beta;
+using NUnit.Framework;
 using Veho;
 
 namespace Aryth.Test.Polar {

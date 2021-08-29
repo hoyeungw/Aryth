@@ -1,6 +1,6 @@
 ﻿using Aryth.Bounds.Utils;
-using Veho.Matrix;
 using Veho.Columns;
+using Veho.Matrix;
 using Veho.Rows;
 using Veho.Vector;
 

@@ -27,6 +27,7 @@
     <ItemGroup>
         <ProjectReference Include="..\Aryth.Bounds\Aryth.Bounds.csproj" />
         <ProjectReference Include="..\Aryth.Comparer\Aryth.Comparer.csproj" />
+        <ProjectReference Include="..\Aryth.Flopper\Aryth.Flopper.csproj" />
         <ProjectReference Include="..\Aryth.Math\Aryth.Math.csproj" />
         <ProjectReference Include="..\Aryth.Polar\Aryth.Polar.csproj" />
     </ItemGroup>
