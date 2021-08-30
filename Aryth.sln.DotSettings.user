@@ -34,6 +34,7 @@
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Flopper.FlopperTests.TestBeta&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.FoliumTests.TrifoliumTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.FoliumTests.QuadrifoliumTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.PolarTests.AnalogousTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba47dffb_002D78a1_002D4995_002Dafb8_002Df2c298f891a7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="VectorBoundTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -54,5 +55,6 @@
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Flopper.FlopperTests.TestAlpha&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Flopper.FlopperTests.TestBeta&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.FoliumTests.TrifoliumTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.PolarTests.AnalogousTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
