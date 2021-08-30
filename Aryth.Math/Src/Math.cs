@@ -20,5 +20,14 @@ namespace Aryth {
     public static double RoundD4(double x) => Round(x * E4) / E4;
 
     public static bool AlmostEqual(double x, double y, double epsilon) => Abs(x - y) < epsilon;
+
+    public static bool HasOpOp(this (double min, double max) interval, double num) => interval.min < num && num < interval.max;
+    public static bool HasOpCl(this (double min, double max) interval, double num) => interval.min < num && num <= interval.max;
+    public static bool HasClOp(this (double min, double max) interval, double num) => interval.min <= num && num < interval.max;
+    public static bool HasClCl(this (double min, double max) interval, double num) => interval.min <= num && num <= interval.max;
+    public static double Constraint(this (double min, double max) interval, double num) {
+      var (min, max) = interval;
+      return num < min ? min : max < num ? max : num;
+    }
   }
 }
