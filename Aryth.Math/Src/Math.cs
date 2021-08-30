@@ -21,11 +21,11 @@ namespace Aryth {
 
     public static bool AlmostEqual(double x, double y, double epsilon) => Abs(x - y) < epsilon;
 
-    public static bool HasOpOp(this (double min, double max) interval, double num) => interval.min < num && num < interval.max;
-    public static bool HasOpCl(this (double min, double max) interval, double num) => interval.min < num && num <= interval.max;
-    public static bool HasClOp(this (double min, double max) interval, double num) => interval.min <= num && num < interval.max;
-    public static bool HasClCl(this (double min, double max) interval, double num) => interval.min <= num && num <= interval.max;
-    public static double Constraint(this (double min, double max) interval, double num) {
+    public static bool HasOpen(this (double min, double max) interval, double num) => interval.min < num && num < interval.max;
+    public static bool HasLOpen(this (double min, double max) interval, double num) => interval.min < num && num <= interval.max;
+    public static bool HasROpen(this (double min, double max) interval, double num) => interval.min <= num && num < interval.max;
+    public static bool Has(this (double min, double max) interval, double num) => interval.min <= num && num <= interval.max;
+    public static double Restrict(this (double min, double max) interval, double num) {
       var (min, max) = interval;
       return num < min ? min : max < num ? max : num;
     }
