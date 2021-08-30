@@ -2,7 +2,7 @@
 using Aryth.Bounds;
 using NUnit.Framework;
 using Spare;
-using Veho.List;
+using Veho.Sequence;
 
 namespace Aryth.Test {
   [TestFixture]
