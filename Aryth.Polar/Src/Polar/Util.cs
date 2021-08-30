@@ -8,9 +8,12 @@ namespace Aryth.Polar {
     public static (double r, double θ) RadianToDegree(this (double r, double θ) polar) => (polar.r, RadianToDegree(polar.θ));
     public static (double r, double θ) Rotate(this (double r, double θ) polar, double degree) {
       var θ = polar.θ + degree;
+      return (polar.r, Stabilize(θ));
+    }
+    public static double Stabilize(double θ) {
       while (θ > 360) θ -= 360;
       while (θ < 0) θ += 360;
-      return (polar.r, θ);
+      return θ;
     }
   }
 }
