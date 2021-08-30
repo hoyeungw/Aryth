@@ -19,7 +19,7 @@ namespace Aryth.Polar {
     }
     public static List<(double r, double θ)> Analogous(this (double r, double θ) polar, double delta, int count) {
       var list = new List<(double, double)>(count);
-      for (var i = 0; i < count; i++) list[i] = polar = polar.Rotate(delta);
+      for (var i = 0; i < count; i++) list.Add(polar = polar.Rotate(delta));
       return list;
     }
     public static List<(double r, double θ)> RhodoneaFolios(this List<(double r, double θ)> list, (double r, double θ) rimMark, int pedals = 3) {
