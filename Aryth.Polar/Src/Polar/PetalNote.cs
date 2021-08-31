@@ -11,7 +11,7 @@ namespace Aryth.Polar {
       Marks = new List<double>(count);
       Counter = new Dictionary<int, int>(count);
       Sum = 0;
-      var angle = startAngle - unit / 2;
+      var angle = Util.Stabilize(startAngle) - unit / 2;
       for (var i = 0; i < count;) {
         Marks.Add(angle);
         Counter.Add(++i, 0);

@@ -3,7 +3,7 @@ using Typen;
 using static System.Double;
 
 namespace Aryth.Bounds.Utils {
-  public static class Assorter {
+  public static class Assorters {
     public static (double x, double y) Assort<T>(T x) {
       if (x == null) return (NaN, NaN);
       var s = x.ToString();

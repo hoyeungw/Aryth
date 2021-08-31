@@ -12,26 +12,26 @@ namespace Aryth.Test.Polar {
   [TestFixture]
   public class FoliumTests {
     public static List<List<(double x, double y)>> Matrix = MU.Mat.Init((11, 11), (x, y) => ((y - 5d) * 20, (5d - x) * 20));
-
+    public static (double, double) StartPoint = (100, 45);
     [Test]
     public void DensityFoliumTest() {
       var candidates = Matrix
                        .Flat()
                        .Map(x => x.CartesianToPolar());
       var bifoliums = candidates
-                      .RhodoneaFolios((100, 45), 2, 0.0015)
+                      .RhodoneaFolios(StartPoint, 2, 0.0015)
                       .Map(x => x.PolarToCartesian().RoundD1());
       var trifoliums = candidates
-                       .RhodoneaFolios((100, 45), 3, 0.0015)
+                       .RhodoneaFolios(StartPoint, 3, 0.0015)
                        .Map(x => x.PolarToCartesian().RoundD1());
       var quadrifoliums = candidates
-                          .RhodoneaFolios((100, 45), 4, 0.0015)
+                          .RhodoneaFolios(StartPoint, 4, 0.0015)
                           .Map(x => x.PolarToCartesian().RoundD1());
       var pentafoliums = candidates
-                         .RhodoneaFolios((100, 45), 5, 0.0015)
+                         .RhodoneaFolios(StartPoint, 5, 0.0015)
                          .Map(x => x.PolarToCartesian().RoundD1());
       var hexafoliums = candidates
-                        .RhodoneaFolios((100, 45), 6, 0.0015)
+                        .RhodoneaFolios(StartPoint, 6, 0.0008)
                         .Map(x => x.PolarToCartesian().RoundD1());
       Matrix.Map(x => bifoliums.Contains(x) ? "+" : " ").ToMatrix().Deco().Says("bifoliums");
       Matrix.Map(x => trifoliums.Contains(x) ? "+" : " ").ToMatrix().Deco().Says("trifoliums");

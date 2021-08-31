@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Veho.Vector;
 
 namespace Aryth {
   public class FiniteFlopper<T> : IEnumerator<T> {
-    private T[] _vector;
     private Random _random;
     private T _curr;
-    public T[] Vec => _vector;
-    public int Length => _vector.Length;
+    public T[] Vec { get; private set; }
+    public int Length => Vec.Length;
     private int _hi;
 
     public static FiniteFlopper<T> From(T[] vector) {
-      return new FiniteFlopper<T> { _vector = vector, _hi = vector.Length, _random = new Random() };
+      return new FiniteFlopper<T> { Vec = vector, _hi = vector.Length, _random = new Random() };
     }
     public IEnumerable<T> Next {
       get {
@@ -28,13 +28,13 @@ namespace Aryth {
       return false;
     }
     public void Reset() {
-      _hi = _vector.Length;
+      _hi = Vec.Length;
     }
     public T Current => _curr;
     object IEnumerator.Current => Current;
     public void Dispose() {
       _random = null;
-      _vector = null;
+      Vec = null;
       // GC.SuppressFinalize(this);
     }
   }
