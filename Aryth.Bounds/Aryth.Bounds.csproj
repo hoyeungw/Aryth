@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -14,11 +14,11 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Aryth.Types\Aryth.Types.csproj"/>
+    <ProjectReference Include="..\Aryth.Types\Aryth.Types.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Texting" Version="0.1.2"/>
-    <PackageReference Include="Typen.Numeral" Version="0.1.1"/>
-    <PackageReference Include="Veho" Version="0.4.7"/>
+    <PackageReference Include="Texting" Version="0.1.2" />
+    <PackageReference Include="Typen.Numeral" Version="0.1.1" />
+    <PackageReference Include="Veho" Version="0.4.8" />
   </ItemGroup>
 </Project>

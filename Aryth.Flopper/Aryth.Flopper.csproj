@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -15,6 +15,6 @@
     <RootNamespace>Aryth</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Veho.Vector" Version="0.4.7"/>
+    <PackageReference Include="Veho.Vector" Version="0.4.8" />
   </ItemGroup>
 </Project>
