@@ -11,7 +11,6 @@ namespace Aryth.Test.Polar {
     [Test]
     public void AnalogousTest() {
       var polar = (100.0, 30.0);
-
       var analogous = polar.Analogous(-30, 6);
       analogous.Map(p => (p, p.PolarToCartesian().RoundD1())).DecoEntries().Says("analogous");
     }
