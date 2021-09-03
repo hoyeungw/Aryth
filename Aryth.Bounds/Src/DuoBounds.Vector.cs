@@ -5,7 +5,8 @@ using Veho.Vector;
 
 namespace Aryth.Bounds {
   public static partial class DuoBounds {
-    public static ((double[] vec, (double min, double max)?) x, (double[] vec, (double min, double max)?) y) DuoBound<T>(this IReadOnlyList<T> vector) {
+    public static ((double[] vec, (double min, double max)?) x, (double[] vec, (double min, double max)?) y)
+      DuoBound<T>(this IReadOnlyList<T> vector) {
       (double min, double max)? bdX = null;
       (double min, double max)? bdY = null;
       var (veX, veY) = vector
