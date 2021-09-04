@@ -4,6 +4,7 @@ namespace Aryth.Polar {
   public class PetalNote {
     public List<double> Marks { get; private set; }
     public Dictionary<int, int> Counter { get; private set; }
+    
     public int Count => Marks.Count;
     public int Sum { get; private set; }
     public PetalNote Initialize(double startAngle, int count) {
