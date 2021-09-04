@@ -1,6 +1,6 @@
 ﻿using Aryth.Coord;
 using static System.Math;
-using static Aryth.Polar.Util;
+using static Aryth.Pol;
 
 namespace Aryth.Polar.Beta {
   public static class Converters {
