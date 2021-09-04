@@ -63,5 +63,6 @@
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.FoliumTests.TrifoliumTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.PolarTests.AnalogousTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.PolarTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.PetalNoteTests.PetalNoteTestAlpha&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

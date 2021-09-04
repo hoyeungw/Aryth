@@ -9,7 +9,7 @@ namespace Aryth.Test.Polar {
   public class PetalNoteTests {
     [Test]
     public void PetalNoteTestAlpha() {
-      var petalNote = PetalNote.Build(72, 5);
+      var petalNote = PetalNote.Build(-36, 5);
       petalNote.Counter.Map(x => (x.Key, x.Value)).DecoEntries().Says("patelNote.Counter");
       petalNote.Marks.Deco().Says("patelNote.Marks");
       var candidates = Seq.From(
