@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using static Aryth.Pol;
 
 namespace Aryth.Polar {
   public class PetalNote {
     public List<double> Marks { get; private set; }
     public Dictionary<int, int> Counter { get; private set; }
-    
+
     public int Count => Marks.Count;
     public int Sum { get; private set; }
     public PetalNote Initialize(double startAngle, int count) {
@@ -12,11 +13,11 @@ namespace Aryth.Polar {
       Marks = new List<double>(count);
       Counter = new Dictionary<int, int>(count);
       Sum = 0;
-      var angle = Util.Stabilize(startAngle) - unit / 2;
+      var angle = LimitDegree(startAngle) - unit / 2;
       for (var i = 0; i < count;) {
         Marks.Add(angle);
         Counter.Add(++i, 0);
-        angle += unit;
+        angle = LimitDegree(angle + unit);
       }
       return this;
     }
@@ -24,7 +25,7 @@ namespace Aryth.Polar {
       return new PetalNote().Initialize(startAngle, count);
     }
     public int Phase(double θ) {
-      θ = Util.Stabilize(θ);
+      θ = LimitDegree(θ);
       for (int i = 0, count = this.Count; i < count; i++) {
         if (θ < Marks[i]) return i == 0 ? count : i;
       }
