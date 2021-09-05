@@ -6,7 +6,7 @@ using Veho.Enumerable;
 
 namespace Aryth.Test.Polar {
   [TestFixture]
-  public class PetalNoteTests {
+  public partial class PetalNoteTests {
     [Test]
     public void PetalNoteTestAlpha() {
       var petalNote = PetalNote.Build(-36, 5);
