@@ -1,19 +1,30 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using static Aryth.Pol;
 
 namespace Aryth.Polar {
-  public class PetalNote {
-    public List<double> Marks { get; private set; }
-    public Dictionary<int, int> Counter { get; private set; }
+  public interface IPhaseNote<in TValue, TPhase, TCount> {
+    IDictionary<TPhase, TCount> Counter { get; }
+    TPhase Phase(TValue value);
+    (TPhase phase, TCount count) Note(TValue value);
+  }
 
+  public class PetalNote : IPhaseNote<double, int, int> {
+    public List<double> Marks { get; private set; }
+    public IDictionary<int, int> Counter { get; private set; }
+    public double Epsilon = 0;
     public int Count => Marks.Count;
     public int Sum { get; private set; }
+    public static PetalNote Build(double startAngle, int count) {
+      return new PetalNote().Initialize(startAngle, count);
+    }
     public PetalNote Initialize(double startAngle, int count) {
       var unit = 360.0 / count;
+      Epsilon = unit / 2;
       Marks = new List<double>(count);
       Counter = new Dictionary<int, int>(count);
       Sum = 0;
-      var angle = LimitDegree(startAngle) - unit / 2;
+      var angle = LimitDegree(startAngle);
       for (var i = 0; i < count;) {
         Marks.Add(angle);
         Counter.Add(++i, 0);
@@ -21,17 +32,18 @@ namespace Aryth.Polar {
       }
       return this;
     }
-    public static PetalNote Build(double startAngle, int count) {
-      return new PetalNote().Initialize(startAngle, count);
+    public void Clear() {
+      Sum = 0;
+      for (var i = 0; i < Counter.Count; i++) Counter[Counter.ElementAt(i).Key] = 0;
     }
     public int Phase(double θ) {
       θ = LimitDegree(θ);
       for (int i = 0, count = this.Count; i < count; i++) {
-        if (θ < Marks[i]) return i == 0 ? count : i;
+        if (Near(Marks[i], θ, Epsilon)) return i + 1;
       }
       return this.Count;
     }
-    public (int index, int count) Note(double θ) {
+    public (int phase, int count) Note(double θ) {
       var phase = this.Phase(θ);
       return (phase, this.NotePhase(phase));
     }
