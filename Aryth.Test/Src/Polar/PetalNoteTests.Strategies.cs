@@ -7,19 +7,12 @@ using Aryth.Test.Polar.Aryth.Polar;
 using Palett;
 using Spare;
 using Veho;
-using Veho.Enumerable;
 using Veho.List;
 using Veho.Types;
 using static Aryth.Pol;
 
 namespace Aryth.Test.Polar {
   namespace Aryth.Polar {
-    public interface IPhaseNote<in TValue, TPhase, TCount> {
-      IDictionary<TPhase, TCount> Counter { get; }
-      TPhase Phase(TValue value);
-      (TPhase phase, TCount count) Note(TValue value);
-    }
-
     public class PetalNoteAlpha : IPhaseNote<double, int, int> {
       public List<double> Marks { get; private set; }
       public IDictionary<int, int> Counter { get; private set; }

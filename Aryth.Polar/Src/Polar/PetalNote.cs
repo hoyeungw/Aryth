@@ -3,11 +3,7 @@ using System.Linq;
 using static Aryth.Pol;
 
 namespace Aryth.Polar {
-  public interface IPhaseNote<in TValue, TPhase, TCount> {
-    IDictionary<TPhase, TCount> Counter { get; }
-    TPhase Phase(TValue value);
-    (TPhase phase, TCount count) Note(TValue value);
-  }
+
 
   public class PetalNote : IPhaseNote<double, int, int> {
     public List<double> Marks { get; private set; }
@@ -28,7 +24,7 @@ namespace Aryth.Polar {
       for (var i = 0; i < count;) {
         Marks.Add(angle);
         Counter.Add(++i, 0);
-        angle = LimitDegree(angle + unit);
+        angle = LimitDegree(angle + unit); 
       }
       return this;
     }
