@@ -10,7 +10,7 @@ namespace Aryth.Bounds {
       (double min, double max)? bdX = null;
       (double min, double max)? bdY = null;
       var (veX, veY) = vector
-                       .Map(x => Assorters.AssortExpandEntryBound(ref bdX, ref bdY, x))
+                       .Map(x => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, x))
                        .Unwind();
       return ((veX, bdX), (veY, bdY));
     }

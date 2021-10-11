@@ -11,7 +11,7 @@ namespace Aryth.Bounds {
       (double min, double max)? bdX = null;
       (double min, double max)? bdY = null;
       var (veX, veY) = matrix
-                       .Map(x => Assorters.AssortExpandEntryBound(ref bdX, ref bdY, x))
+                       .Map(x => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, x))
                        .Unwind();
       return ((veX, bdX), (veY, bdY));
     }
@@ -20,7 +20,7 @@ namespace Aryth.Bounds {
       (double min, double max)? bdX = null;
       (double min, double max)? bdY = null;
       var (veX, veY) = matrix
-                       .Row(x, v => Assorters.AssortExpandEntryBound(ref bdX, ref bdY, v), w)
+                       .Row(x, v => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, v), w)
                        .Unwind();
       return ((veX, bdX), (veY, bdY));
     }
@@ -29,7 +29,7 @@ namespace Aryth.Bounds {
       (double min, double max)? bdX = null;
       (double min, double max)? bdY = null;
       var (veX, veY) = matrix
-                       .Column(y, v => Assorters.AssortExpandEntryBound(ref bdX, ref bdY, v), h)
+                       .Column(y, v => Assorter.AssortExpandEntryBound(ref bdX, ref bdY, v), h)
                        .Unwind();
       return ((veX, bdX), (veY, bdY));
     }
