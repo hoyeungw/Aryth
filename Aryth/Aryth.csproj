@@ -19,6 +19,7 @@
     <ProjectReference Include="..\Aryth.Comparer\Aryth.Comparer.csproj" />
     <ProjectReference Include="..\Aryth.Coord\Aryth.Coord.csproj" />
     <ProjectReference Include="..\Aryth.Math\Aryth.Math.csproj" />
+    <ProjectReference Include="..\Aryth.NiceScale\Aryth.NiceScale.csproj" />
     <ProjectReference Include="..\Aryth.Polar\Aryth.Polar.csproj" />
     <ProjectReference Include="..\Aryth.Types\Aryth.Types.csproj" />
   </ItemGroup>
