@@ -2,8 +2,8 @@
 
 namespace Aryth {
   public static class Math {
-    public static int IntExp(float x) => (int)Log10(x);
-    public static int IntExp(double x) => (int)Log10(x);
+    public static int IntExp(float x) => x == 0 ? 0 : (int)Log10(x);
+    public static int IntExp(double x) => x == 0 ? 0 : (int)Log10(x);
 
     public static float E2 = 100;
     public static float E3 = 1000;
