@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aryth", "Aryth\Aryth.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aryth.Flopper", "Aryth.Flopper\Aryth.Flopper.csproj", "{DA13D940-3DAC-45A1-8855-606DF16F7EAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aryth.Calculator", "Aryth.Calculator\Aryth.Calculator.csproj", "{9FB3A528-321E-4C20-802A-50222C36C9B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aryth.NiceScale", "Aryth.NiceScale\Aryth.NiceScale.csproj", "{412BD45F-262B-45F5-B4CD-38DC089B8233}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +64,13 @@ Global
 		{DA13D940-3DAC-45A1-8855-606DF16F7EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA13D940-3DAC-45A1-8855-606DF16F7EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA13D940-3DAC-45A1-8855-606DF16F7EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FB3A528-321E-4C20-802A-50222C36C9B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB3A528-321E-4C20-802A-50222C36C9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB3A528-321E-4C20-802A-50222C36C9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB3A528-321E-4C20-802A-50222C36C9B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412BD45F-262B-45F5-B4CD-38DC089B8233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412BD45F-262B-45F5-B4CD-38DC089B8233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412BD45F-262B-45F5-B4CD-38DC089B8233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412BD45F-262B-45F5-B4CD-38DC089B8233}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

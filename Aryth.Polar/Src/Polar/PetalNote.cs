@@ -34,17 +34,17 @@ namespace Aryth.Polar {
     }
     public int Phase(double θ) {
       θ = LimitDegree(θ);
-      for (int i = 0, count = this.Count; i < count; i++) {
+      for (int i = 0, count = Count; i < count; i++) {
         if (Near(Marks[i], θ, Epsilon)) return i + 1;
       }
-      return this.Count;
+      return Count;
     }
     public (int phase, int count) Note(double θ) {
-      var phase = this.Phase(θ);
-      return (phase, this.NotePhase(phase));
+      var phase = Phase(θ);
+      return (phase, NotePhase(phase));
     }
     public int NotePhase(int phase) {
-      this.Sum++;
+      Sum++;
       return Counter[phase] += 1;
     }
   }
