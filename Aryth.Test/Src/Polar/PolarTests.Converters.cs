@@ -8,7 +8,7 @@ namespace Aryth.Test.Polar {
   public partial class PolarTests {
     [Test]
     public static void CartesianAndPolarConvertTest() {
-      foreach (var coord in PolarTests.Candidates) {
+      foreach (var coord in Candidates) {
         var polar = coord.CartesianToPolar().RoundD1();
         var coord2 = polar.PolarToCartesian().RoundD1();
         Console.WriteLine($">> [coord] {coord} [polar] {polar} [coord2] {coord2}");

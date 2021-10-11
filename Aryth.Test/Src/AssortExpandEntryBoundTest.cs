@@ -9,9 +9,9 @@ namespace Aryth.Test {
     public void Test() {
       (double, double)? bdX = null;
       (double, double)? bdY = null;
-      Assorters.AssortExpandEntryBound(ref bdX, ref bdY, 1);
-      Assorters.AssortExpandEntryBound(ref bdX, ref bdY, "some");
-      Assorters.AssortExpandEntryBound(ref bdX, ref bdY, "ace");
+      Assorter.AssortExpandEntryBound(ref bdX, ref bdY, 1);
+      Assorter.AssortExpandEntryBound(ref bdX, ref bdY, "some");
+      Assorter.AssortExpandEntryBound(ref bdX, ref bdY, "ace");
       $"{bdX}, {bdY}".Logger();
       // $"{0} > {double.NaN} = {double.NaN > 0}".Logger();
     }

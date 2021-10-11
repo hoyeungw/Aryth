@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 using Spare;
-using Texting.Value;
+using Texting;
 using Veho.Vector;
 
 namespace Aryth.Test {

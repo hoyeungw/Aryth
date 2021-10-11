@@ -15,21 +15,24 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Analys.Deco" Version="0.1.22" />
+        <PackageReference Include="Analys.Deco" Version="0.2.6" />
         <PackageReference Include="NUnit" Version="3.13.2" />
         <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
-        <PackageReference Include="Spare" Version="0.1.25" />
-        <PackageReference Include="Texting" Version="0.1.2" />
-        <PackageReference Include="Valjoux.Strategies" Version="0.0.5" />
-        <PackageReference Include="Veho" Version="0.4.18" />
+        <PackageReference Include="Spare" Version="0.2.2" />
+        <PackageReference Include="Texting" Version="0.1.6" />
+        <PackageReference Include="Valjoux.Strategies" Version="0.1.1" />
+        <PackageReference Include="Veho" Version="0.5.10" />
+        <PackageReference Include="Veho.Linear" Version="0.5.10" />
     </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\Aryth.Bounds\Aryth.Bounds.csproj" />
+        <ProjectReference Include="..\Aryth.Calculator\Aryth.Calculator.csproj" />
         <ProjectReference Include="..\Aryth.Comparer\Aryth.Comparer.csproj" />
         <ProjectReference Include="..\Aryth.Flopper\Aryth.Flopper.csproj" />
         <ProjectReference Include="..\Aryth.Math\Aryth.Math.csproj" />
+        <ProjectReference Include="..\Aryth.NiceScale\Aryth.NiceScale.csproj" />
         <ProjectReference Include="..\Aryth.Polar\Aryth.Polar.csproj" />
     </ItemGroup>
 </Project>
