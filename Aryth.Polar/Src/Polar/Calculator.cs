@@ -20,7 +20,5 @@ namespace Aryth.Polar {
       for (var i = 0; i < count; i++) list.Add(polar = polar.Rotate(delta));
       return list;
     }
-    
-
   }
 }
