@@ -21,9 +21,9 @@
 //     /// <returns></returns>
 //     public static bool IsEven(this int v) => v % 2 == 0;
 //     public static bool IsEven(this long v) => v % 2 == 0;
-//     public static int Restrict(this int val, int min, int max) => val < max ? val > min             ? val : min : max;
-//     public static float Restrict(this float val, float min, float max) => val < max ? val > min     ? val : min : max;
-//     public static double Restrict(this double val, double min, double max) => val < max ? val > min ? val : min : max;
+//     public static int Limit(this int val, int min, int max) => val < max ? val > min             ? val : min : max;
+//     public static float Limit(this float val, float min, float max) => val < max ? val > min     ? val : min : max;
+//     public static double Limit(this double val, double min, double max) => val < max ? val > min ? val : min : max;
 //     public static float[] ProjectTo(this float[] cAr, float iVa, float aVa) {
 //       var cΔ = cAr.Max() - cAr.Min();
 //       var tΔ = aVa - iVa;
