@@ -20,11 +20,11 @@ namespace Aryth.Polar {
       Marks = new List<double>(count);
       Counter = new Dictionary<int, int>(count);
       Sum = 0;
-      var angle = LimitDegree(startAngle);
+      var angle = Restrict(startAngle);
       for (var i = 0; i < count;) {
         Marks.Add(angle);
         Counter.Add(++i, 0);
-        angle = LimitDegree(angle + unit); 
+        angle = Restrict(angle + unit); 
       }
       return this;
     }
@@ -33,7 +33,7 @@ namespace Aryth.Polar {
       for (var i = 0; i < Counter.Count; i++) Counter[Counter.ElementAt(i).Key] = 0;
     }
     public int Phase(double θ) {
-      θ = LimitDegree(θ);
+      θ = Restrict(θ);
       for (int i = 0, count = Count; i < count; i++) {
         if (Near(Marks[i], θ, Epsilon)) return i + 1;
       }
