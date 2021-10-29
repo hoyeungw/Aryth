@@ -4,10 +4,9 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=893d8afc_002D2987_002D4435_002D91af_002D2688d5dc55e6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AlgebraCalculatorTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Calculator.AlgebraCalculatorTest&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.NumberFormatTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Calculator.Algebraic.AlgebraicTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.NiceScale.NiceScaleTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Polar.Minus_Tests.Test&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.DuoBoundTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.StringValueTests.StringValueTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.SoleBoundTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7F1AC0FE-0FE7-4070-8EF6-1FD3AF6403CA::.NETFramework,Version=v4.7.2::Aryth.Test.Flopper.FlopperTests.TestAlpha&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

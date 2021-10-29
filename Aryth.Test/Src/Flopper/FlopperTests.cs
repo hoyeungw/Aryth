@@ -7,8 +7,9 @@ namespace Aryth.Test.Flopper {
   public class FlopperTests {
     [Test]
     public void TestAlpha() {
-      var vec = Vec.From("foo", "bar", "zen", "dee");
+      var vec = Vec.From("foo", "bar", "zen", "des");
       var flopper = FiniteFlopper<string>.From(vec);
+      Console.WriteLine($">> [next] {flopper.MoveNext()} {flopper.Current}");
       Console.WriteLine($">> [next] {flopper.MoveNext()} {flopper.Current}");
       Console.WriteLine($">> [next] {flopper.MoveNext()} {flopper.Current}");
       Console.WriteLine($">> [next] {flopper.MoveNext()} {flopper.Current}");

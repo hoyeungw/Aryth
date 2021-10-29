@@ -11,8 +11,8 @@ using MU = Veho.Mutable;
 namespace Aryth.Test.Polar {
   [TestFixture]
   public class FoliumTests {
-    public static List<List<(double x, double y)>> Matrix = MU.Mat.Init((11, 11), (x, y) => ((y - 5d) * 20, (5d - x) * 20));
-    public static (double, double) StartPoint = (100, 45);
+    public static List<List<(double x, double y)>> Matrix = MU.Mat.Init((17, 17), (x, y) => ((y - 8d) * 20, (8d - x) * 20));
+    public static (double, double) StartPoint = (160, 30);
     [Test]
     public void DensityFoliumTest() {
       var candidates = Matrix

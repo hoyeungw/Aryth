@@ -35,7 +35,7 @@ namespace Aryth.Test.Calculator.Algebraic {
         var postfix = AlgebraCalculator.InfixToPostfix(queue);
         Console.WriteLine($">> [key] {postfix.ToList().Deco(presets: (Presets.Metro, Presets.Fresh))}");
         var result = algebraCalculator.CalculatePostfix(postfix);
-        Console.WriteLine($">> [operand] {result.Deco()}");
+        Console.WriteLine($">> [result] {result.Deco()}");
       }
     }
   }
