@@ -13,8 +13,10 @@
     <FileVersion>0.2.22</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RootNamespace>Aryth</RootNamespace>
+    <PackageIcon>palett-avatar.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Veho.Vector" Version="0.5.10"/>
+    <PackageReference Include="Veho.Vector" Version="0.5.11" />
+    <None Include="..\media\aryth-avatar.png" Pack="true" PackagePath=""/>
   </ItemGroup>
 </Project>

@@ -14,16 +14,18 @@
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RootNamespace>Aryth</RootNamespace>
+    <PackageIcon>palett-avatar.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Aryth.Math\Aryth.Math.csproj"/>
     <ProjectReference Include="..\Aryth.Types\Aryth.Types.csproj"/>
+    <None Include="..\media\aryth-avatar.png" Pack="true" PackagePath=""/>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Ject.Reflect" Version="0.0.1"/>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0"/>
-    <PackageReference Include="Veho" Version="0.5.10"/>
-    <PackageReference Include="Veho.Linear" Version="0.5.10"/>
+    <PackageReference Include="Veho" Version="0.5.11" />
+    <PackageReference Include="Veho.Linear" Version="0.5.11" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp"/>

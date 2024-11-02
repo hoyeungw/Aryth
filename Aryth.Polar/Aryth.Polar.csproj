@@ -13,10 +13,12 @@
     <FileVersion>0.2.22</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RootNamespace>Aryth</RootNamespace>
+    <PackageIcon>palett-avatar.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Aryth.Coord\Aryth.Coord.csproj"/>
     <ProjectReference Include="..\Aryth.Flopper\Aryth.Flopper.csproj"/>
     <ProjectReference Include="..\Aryth.Math\Aryth.Math.csproj"/>
+    <None Include="..\media\aryth-avatar.png" Pack="true" PackagePath=""/>
   </ItemGroup>
 </Project>
