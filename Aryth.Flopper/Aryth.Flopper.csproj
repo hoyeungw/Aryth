@@ -16,7 +16,7 @@
     <PackageIcon>aryth-avatar.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Veho.Vector" Version="0.5.12"/>
+    <PackageReference Include="Veho.Vector" Version="0.5.13" />
     <None Include="..\media\aryth-avatar.png" Pack="true" PackagePath=""/>
   </ItemGroup>
 </Project>

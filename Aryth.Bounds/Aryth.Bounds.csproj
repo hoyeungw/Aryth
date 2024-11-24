@@ -21,6 +21,6 @@
   <ItemGroup>
     <PackageReference Include="Texting" Version="0.1.10"/>
     <PackageReference Include="Typen.Numeral" Version="0.1.1"/>
-    <PackageReference Include="Veho" Version="0.5.12"/>
+    <PackageReference Include="Veho" Version="0.5.13" />
   </ItemGroup>
 </Project>
