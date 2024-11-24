@@ -18,7 +18,7 @@ namespace Aryth {
     public void ParseEnqueue(string text) {
       if (string.IsNullOrEmpty(text)) return;
       if (double.TryParse(text, out var number)) Enqueue(number.ToOperand());
-      else if (OperandParser(text, out var value)) this.Enqueue(value.ToOperand());
+      else if (OperandParser(text, out var value)) this.Enqueue(OperandFactory.ToOperand(value));
       else if (AlgebraParser(text, null, out var method)) Enqueue(method.CastOperator());
     }
   }
