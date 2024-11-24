@@ -2,9 +2,19 @@
 
 namespace Aryth {
   public static partial class Math {
-    public static float E2 = 100;
-    public static float E3 = 1000;
-    public static float E4 = 10000;
+    public static int TrailExp(this float num, int trail) {
+      string sci = $"0.{new string('0', trail)}E0";
+      return num.TrailExp(sci);
+    }
+    public static int TrailExp(this float num, string sci = "0.000000E0") {
+      var groups = TrailRegex.Match(num.ToString(sci)).Groups;
+      string n = groups[1].Value, d = groups[2].Value;
+      var i = n.Length;
+      while (--i >= 0) {
+        if (n[i] != '0') return int.Parse(d) - ++i;
+      }
+      return 0;
+    }
 
     public static int IntExp(float x) => x == 0 ? 0 : (int)Log10(x);
     public static float RoundD1(float x) => (float)Round(x * 10) / 10;
