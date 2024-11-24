@@ -28,7 +28,7 @@ namespace Aryth {
         // currMethod.GetGenericArguments().Deco().Says(currMethod.ToString());
         if (
           currMethod.Name == methodName && currParamTypes.Length == paramTypes.Length &&
-          Selectors.Every(paramTypes, (i, paramType) => {
+          paramTypes.Every((i, paramType) => {
             var currParamType = currParamTypes[i];
             // Console.WriteLine($">> [{i}] [{paramType}, {currParamType}] equality [generic] {paramType.GenericEquals(currParamType)} [interface] {paramType.ImplementEquals(currParamType)}");
             return (paramType == currParamType) ||

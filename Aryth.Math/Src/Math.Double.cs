@@ -2,17 +2,18 @@
 
 namespace Aryth {
   public static partial class Math {
-    public static int TrailExp(this double num, int trail) {
-      string sci = $"0.{new string('0', trail)}E0";
-      return num.TrailExp(sci);
-    }
-    public static int TrailExp(this double num, string sci = "0.000000E0") {
-      var groups = TrailRegex.Match(num.ToString(sci)).Groups;
+    public static int TrailExp(double num) => TrailExpOf(num, SciNote);
+
+    public static int TrailExpBy(double num, int trail) => TrailExpOf(num, $"0.{new string('0', trail)}E0");
+
+    private static int TrailExpOf(double num, string sci) {
+      var literal = num.ToString(sci);
+      var groups = TrailRegex.Match(literal).Groups;
       string n = groups[1].Value, d = groups[2].Value;
       var i = n.Length;
-      while (--i >= 0) {
-        if (n[i] != '0') return int.Parse(d) - ++i;
-      }
+      while (--i >= 0)
+        if (n[i] != '0')
+          return int.Parse(d) - ++i;
       return 0;
     }
 
