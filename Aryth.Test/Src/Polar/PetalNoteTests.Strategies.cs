@@ -7,7 +7,7 @@ using NUnit.Framework;
 using Palett;
 using Spare;
 using Veho;
-using Veho.List;
+using Veho.Sequence;
 using Veho.Types;
 using static Aryth.Pol;
 
