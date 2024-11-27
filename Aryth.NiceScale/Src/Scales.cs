@@ -1,22 +1,25 @@
-﻿using static System.Math;
+﻿using System;
+using static System.Math;
 
 namespace Aryth {
-  public static class Scaler {
+  public static class Scales {
     public static (double min, double max, double step) NiceScale(this (double min, double max) bound, int ticks = 10) {
       var (lo, hi) = bound;
       var delta = NiceNum(hi - lo, false);
       var step = NiceNum(delta / (ticks - 1), true);
-      var min = Floor(lo / step) * step;
-      var max = Ceiling(hi / step) * step;
+      double min = Floor(lo / step) * step, max = Ceiling(hi / step) * step;
       return (min, max, step);
     }
 
-    public static double[] NiceLabels(this (double min, double max) bound, int ticks = 10) {
+    public static double[] NiceTicks(this (double min, double max) bound, int ticks = 10) {
       var (min, max, step) = bound.NiceScale(ticks);
-      return TickLabels(min, step, (int)Round((max - min) / step));
+      return Ticks(min, step, (int)Round((max - min) / step));
     }
 
-    public static double[] TickLabels(double lo, double step, int gaps) {
+    [Obsolete("Use NickTicks")]
+    public static double[] NiceLabels(this (double min, double max) bound, int ticks = 10) => bound.NiceTicks(ticks);
+
+    public static double[] Ticks(double lo, double step, int gaps) {
       var vec = new double[gaps + 1];
       var i = 0;
       do {
@@ -25,6 +28,7 @@ namespace Aryth {
       } while (i <= gaps);
       return vec;
     }
+
     public static double NiceNum(double range, bool round) {
       var expon = Floor(Log10(range));
       var frac = range / Pow(10, expon);

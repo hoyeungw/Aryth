@@ -6,6 +6,7 @@ using Aryth.Test.Polar.Aryth.Polar;
 using NUnit.Framework;
 using Palett;
 using Spare;
+using Valjoux;
 using Veho;
 using Veho.Sequence;
 using Veho.Types;
@@ -110,21 +111,21 @@ namespace Aryth.Test.Polar {
       // baha.Clear();
       // baha.Counter.Entries().DecoEntries().Says("baha");
 
-      var (elapsed, result) = Valjoux.Strategies.Run(
+      var (elapsed, result) = Strategies.Run(
         (int)1E+5,
         Seq.From<(string, Func<List<double>, IPhaseNote<double, int, int>>)>(
           ("arch", vec => {
             arch.Clear();
             // Console.WriteLine($">> [arch] {arch.Sum}");
             // Console.WriteLine($">> [arch] {arch.Marks.Deco()}");
-            vec.Iterate(x => arch.Note(x));
+            vec.IterateList(x => arch.Note(x));
             return arch;
           }),
           ("baha", vec => {
             baha.Clear();
             // Console.WriteLine($">> [baha] {baha.Sum}");
             // Console.WriteLine($">> [arch] {baha.Marks.Deco()}");
-            vec.Iterate(x => baha.Note(x));
+            vec.IterateList(x => baha.Note(x));
             return baha;
           })
         ),

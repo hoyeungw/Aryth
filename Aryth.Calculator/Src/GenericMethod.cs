@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using Ject;
-using Veho.Sequence;
+using Veho.Vector;
 
 namespace Aryth {
   public static class GenericMethod {

@@ -22,28 +22,45 @@ namespace Aryth {
     public static float RoundD3(float x) => (float)Round(x * E3) / E3;
     public static float RoundD4(float x) => (float)Round(x * E4) / E4;
 
-    public static float Limit(this (float min, float max) interval, float value) {
-      var (min, max) = interval;
-      if (value < min) return min;
-      if (value > max) return max;
-      return value;
+    // public static bool Has(this (float min, float max) bin, float num, Open open = Open.None) {
+    //   var (minOpen, maxOpen) = open.Decode(); // (((byte)open >> 0 & 0b1) == 0b1, ((byte)open >> 1 & 0b1) == 0b1);
+    //   return minOpen
+    //     ? maxOpen
+    //       ? bin.min < num && num < bin.max
+    //       : bin.min < num && num <= bin.max
+    //     : maxOpen
+    //       ? bin.min <= num && num < bin.max
+    //       : bin.min <= num && num <= bin.max;
+    // }
+
+    /// <summary>for closed</summary>
+    public static bool Hold(this (float min, float max) bin, float num) => bin.min <= num && num <= bin.max;
+
+    /// <summary>for open</summary>
+    public static bool Allow(this (float min, float max) bin, float num) => bin.min < num && num < bin.max;
+
+    public static float Limit(this (float min, float max) bin, float num) {
+      var (min, max) = bin;
+      if (num < min) return min;
+      if (num > max) return max;
+      return num;
     }
-    public static float Restrict(this (float min, float max) periodic, float value) {
-      var (min, max) = periodic;
+    public static float Restrict(this (float min, float max) period, float num) {
+      var (min, max) = period;
       var delta = max - min;
-      while (value < min) value += delta;
-      while (value > max) value -= delta;
-      return value;
+      while (num < min) num += delta;
+      while (num > max) num -= delta;
+      return num;
     }
-    public static float Limit(float value, float max) {
-      if (value < 0) return 0;
-      if (value > max) return max;
-      return value;
+    public static float Limit(float num, float max) {
+      if (num < 0) return 0;
+      if (num > max) return max;
+      return num;
     }
-    public static float Restrict(float value, float max) {
-      while (value < 0) value += max;
-      while (value > max) value -= max;
-      return value;
+    public static float Restrict(float num, float max) {
+      while (num < 0) num += max;
+      while (num > max) num -= max;
+      return num;
     }
   }
 }

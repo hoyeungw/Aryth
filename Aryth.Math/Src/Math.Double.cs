@@ -1,8 +1,9 @@
-﻿using static System.Math;
+﻿using System;
+using static System.Math;
 
 namespace Aryth {
   public static partial class Math {
-    public static int TrailExp(double num) => TrailExpOf(num, SciNote);
+    public static int TrailExp(double num) => TrailExpOf(num, Math.SciNote);
 
     public static int TrailExpBy(double num, int trail) => TrailExpOf(num, $"0.{new string('0', trail)}E0");
 
@@ -19,41 +20,64 @@ namespace Aryth {
 
     public static int IntExp(double x) => x == 0 ? 0 : (int)Log10(x);
 
+    public static double Sq(double x) => Pow(x, 2);
+
     public static double RoundD1(double x) => Round(x * 10) / 10;
     public static double RoundD2(double x) => Round(x * E2) / E2;
     public static double RoundD3(double x) => Round(x * E3) / E3;
     public static double RoundD4(double x) => Round(x * E4) / E4;
 
     public static bool AlmostEqual(double x, double y, double epsilon) => Abs(x - y) < epsilon;
+    // public static bool Has(this (double min, double max) bin, double num, Open open = Open.None) {
+    //   var (minOpen, maxOpen) = open.Decode(); // (((byte)open >> 0 & 0b1) == 0b1, ((byte)open >> 1 & 0b1) == 0b1);
+    //   return minOpen
+    //     ? maxOpen
+    //       ? bin.min < num && num < bin.max
+    //       : bin.min < num && num <= bin.max
+    //     : maxOpen
+    //       ? bin.min <= num && num < bin.max
+    //       : bin.min <= num && num <= bin.max;
+    // }
 
-    public static bool HasOpen(this (double min, double max) interval, double num) => interval.min < num && num < interval.max;
-    public static bool HasLOpen(this (double min, double max) interval, double num) => interval.min < num && num <= interval.max;
-    public static bool HasROpen(this (double min, double max) interval, double num) => interval.min <= num && num < interval.max;
-    public static bool Has(this (double min, double max) interval, double num) => interval.min <= num && num <= interval.max;
-    public static double Limit(this (double min, double max) interval, double value) {
-      var (min, max) = interval;
-      if (value < min) return min;
-      if (value > max) return max;
-      return value;
+    /// <summary>for closed</summary>
+    public static bool Hold(this (double min, double max) bin, double num) => bin.min <= num && num <= bin.max;
+
+    /// <summary>for open</summary>
+    public static bool Allow(this (double min, double max) bin, double num) => bin.min < num && num < bin.max;
+
+    public static double Limit(this (double min, double max) bin, double num) {
+      var (min, max) = bin;
+      if (num < min) return min;
+      if (num > max) return max;
+      return num;
     }
 
-    public static double Restrict(this (double min, double max) periodic, double value) {
-      var (min, max) = periodic;
+    public static double Restrict(this (double min, double max) period, double num) {
+      var (min, max) = period;
       var delta = max - min;
-      while (value < min) value += delta;
-      while (value > max) value -= delta;
-      return value;
+      while (num < min) num += delta;
+      while (num > max) num -= delta;
+      return num;
     }
 
-    public static double Limit(double value, double max) {
-      if (value < 0) return 0;
-      if (value > max) return max;
-      return value;
+    public static double Limit(double num, double max) {
+      if (num < 0) return 0;
+      if (num > max) return max;
+      return num;
     }
-    public static double Restrict(double value, double max) {
-      while (value < 0) value += max;
-      while (value > max) value -= max;
-      return value;
+    public static double Restrict(double num, double max) {
+      while (num < 0) num += max;
+      while (num > max) num -= max;
+      return num;
     }
+
+    [Obsolete("Use Has / Hold / Allow instead")]
+    public static bool HasOpen(this (double min, double max) bin, double num) => bin.min < num && num < bin.max;
+
+    [Obsolete("Use Has / Hold / Allow instead")]
+    public static bool HasLOpen(this (double min, double max) bin, double num) => bin.min < num && num <= bin.max;
+
+    [Obsolete("Use Has / Hold / Allow instead")]
+    public static bool HasROpen(this (double min, double max) bin, double num) => bin.min <= num && num < bin.max;
   }
 }

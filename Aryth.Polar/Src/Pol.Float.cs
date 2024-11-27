@@ -21,8 +21,8 @@ namespace Aryth {
     public static bool Near(float θa, float θb, float epsilon) {
       return Distance(θa, θb) < epsilon;
     }
-    public static bool Contains(this (float a, float b) interval, float θ) {
-      var (a, b) = interval;
+    public static bool Contains(this (float a, float b) bin, float θ) {
+      var (a, b) = bin;
       return a <= b
         ? a < θ && θ < b
         : a < θ || θ < b;

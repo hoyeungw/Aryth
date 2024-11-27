@@ -20,11 +20,9 @@ namespace Aryth {
         return rawDf < 0 ? negDf : -negDf;
       }
     }
-    public static bool Near(double θa, double θb, double epsilon) {
-      return Distance(θa, θb) < epsilon;
-    }
-    public static bool Contains(this (double a, double b) interval, double θ) {
-      var (a, b) = interval;
+    public static bool Near(double θa, double θb, double ε) => Distance(θa, θb) < ε;
+    public static bool Contains(this (double a, double b) bin, double θ) {
+      var (a, b) = bin;
       return a <= b ? a < θ && θ < b : a < θ || θ < b;
     }
     public static (double r, double θ) Rotate(this (double r, double θ) polar, double degree) {

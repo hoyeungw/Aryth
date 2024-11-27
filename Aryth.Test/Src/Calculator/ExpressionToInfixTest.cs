@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Analys;
+using Aryth.Archive;
 using Aryth.Expression;
 using NUnit.Framework;
 using Palett;
@@ -45,7 +46,7 @@ namespace Aryth.Test.Calculator {
         (int)1E+4,
         Seq.From<(string, Func<string, Queue<IExpression>>)>(
           ("epic", text => NaiveCalculator.ExpressionToInfix(text, x => (IExpression)Operand.Build(x))),
-          ("arch", text => Archive.ExpressionParser.ExpressionToInfix(text)),
+          ("arch", text => ExpressionParser.ExpressionToInfix(text)),
           ("baha", text => new Queue<IExpression>(algebraCalculator.ExpressionToInfix(text)))
         ),
         Seq.From(
