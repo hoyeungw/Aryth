@@ -24,8 +24,8 @@
   <ItemGroup>
     <PackageReference Include="Ject.Reflect" Version="0.0.2"/>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0"/>
-    <PackageReference Include="Veho" Version="0.6.10"/>
-    <PackageReference Include="Veho.Linear" Version="0.6.9"/>
+    <PackageReference Include="Veho.Dictionary" Version="0.6.12" />
+    <PackageReference Include="Veho.Linear" Version="0.6.12" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp"/>

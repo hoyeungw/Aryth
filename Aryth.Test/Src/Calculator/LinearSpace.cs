@@ -10,8 +10,6 @@ namespace Aryth.Test.Calculator {
       var alpha = (3, 3).Init((i, j) => i);
       var beta = (3, 3).Init((i, j) => j);
       var gamma = alpha.op_Addition(beta);
-
-
       gamma.Deco().Says("gamma");
     }
   }
